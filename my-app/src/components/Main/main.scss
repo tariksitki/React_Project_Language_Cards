@@ -1,6 +1,7 @@
 
 @import "../../Scss/reset";
 @import "../../Scss/variables";
+@import "../../Scss/mixins";
 
 .main {
     width: 30vw;
@@ -15,7 +16,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
+    outline: 0.1rem solid $mainBackgroundColor;
+    outline-offset: 1rem;
 
     h1 {
         color: white;
@@ -30,3 +33,62 @@
         margin-bottom: 5rem
     }
 };
+
+
+@include media-xl {
+    .main {
+        width: 32vw;
+        margin-top: 3vh;
+
+        h1 {
+            margin-top: 1rem;
+        }
+    };
+}
+
+@include media-lg {
+    .main {
+        width: 40vw;
+        margin-top: 3vh;
+        
+        h1 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+    };
+}
+
+@include media-md {
+    .main {
+        width: 60vw;
+        margin-top: 3vh;
+        
+        h1 {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+        }
+    };
+}
+
+@include media-sm {
+    .main {
+        width: 80vw;
+        margin-top: 3vh;
+        
+        h1 {
+            margin-top: 1rem;
+        }
+    };
+}
+
+@include media-xsm {
+    .main {
+        width: 90vw;
+        margin-top: 3vh;
+        
+        h1 {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+    };
+}

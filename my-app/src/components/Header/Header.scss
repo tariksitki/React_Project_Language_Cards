@@ -1,4 +1,6 @@
 
+@import "../../Scss/mixins";
+
 .header {
     display: flex;
     justify-content: center;
@@ -10,4 +12,36 @@
         width: 35%;
         height: 12rem;
     }
+}
+
+@include media-md {
+    .header {
+        margin-top: 1vh;
+    
+        img {
+            width: 35%;
+            height: 9rem;
+        }
+}}
+
+
+@include media-sm {
+    .header {
+        margin-top: 1vh;
+    
+        img {
+            width: 35%;
+            height: 7rem;
+        }
+}}
+
+@include media-xsm {
+    .header {
+        margin-top: 1vh;
+    
+        img {
+            width: 35%;
+            height: 5rem;
+        }
+}
 }

@@ -1,0 +1,17 @@
+@import "../../Scss/variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 11vh;
+  background-color: $mainBackgroundColor;
+  outline: 0.2rem solid $mainBackgroundColor;
+  outline-offset: 1rem;
+
+  h3 {
+      margin-bottom: 0.4rem;
+  }
+}

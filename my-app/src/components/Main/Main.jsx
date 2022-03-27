@@ -12,8 +12,8 @@ const Main = () => {
 
       <section className="cards">
         {data.map((item, index) => {
-          const { img, name } = item;
-          return <Card image={img} name={name} key={index} />;
+          const { img, name, options } = item;
+          return <Card image={img} name={name} options = {options} key={index} />;
         })}
       </section>
     </main>

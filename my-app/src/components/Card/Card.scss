@@ -1,5 +1,6 @@
 
 @import "../../Scss/variables";
+@import "../../Scss/mixins";
 
 .foto-main {
     display: flex;
@@ -12,18 +13,20 @@
     margin-top: 2rem;
     padding: 0.4rem;
     position: relative;
+    text-align: center;
+    height: 9rem;
+    cursor: pointer;
 
     .name {
         color: black;
     }
 
     &:hover .image {
-        width: 6rem;
-        height: 5.5rem;
-        cursor: pointer;
-        transition: all 300ms;
+        // width: 6rem;
+        // height: 5.5rem;
+        // transition: all 300ms;
+        transform: scale(1.30);
     }
-
 }
 
 .foto-div {
@@ -34,11 +37,31 @@
     height: 6rem;
     margin-bottom: 0.5rem;
     position: relative;
-    background-color: aqua;
 
     img {
         width: 5rem;
         height: 5rem;
         transition: all 300ms;
+    }
+}
+
+    // Info Card
+
+.info-card-div {
+    text-align: left;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.info-card-li {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+
+@media only screen and (max-width:1200px) {
+    .info-card-li {
+        font-size: 1rem;
     }
 }

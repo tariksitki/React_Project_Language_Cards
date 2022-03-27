@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <main className="main">
       <div className="header-div">
-        <h1>Languages</h1>
+        <h1>LanguageS </h1>
       </div>
 
       <section className="cards">
